@@ -1,7 +1,6 @@
-runtime: nodejs14
+runtime: nodejs14 # or whichever supported version you are using
 env: standard
+instance_class: F1 # Choose your instance class here. F1 is the smallest instance class.
 
 automatic_scaling:
-  min_idle_instances: 1
-
-network: {}
+  max_instances: 1 # To control costs during initial deployment/testing.
